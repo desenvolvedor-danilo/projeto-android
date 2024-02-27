@@ -1,0 +1,227 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "idroid";
+    src: url('fontes/idroid.otf') format('opentype');
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+:root{
+    --cor0:#268851;
+    --cor1: white;
+    --cor2: black;
+    --cor3: #024921;
+    --fonte-padrao:Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque:'Bebas Neue' , cursive;
+    --fonte-android:"idroid" , cursive;
+}
+*{
+    margin: 0;
+}
+header{
+background-image: linear-gradient(to bottom, var(--cor0), var(--cor3));
+height: 150px;
+padding-top: 20px;
+}
+header>h1{
+    color: white;
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.514);
+}
+header>p{
+    color: var(--cor1);
+    font-size: 1.2em;
+    text-align: center;
+    padding: 10px;
+    font-family: var(--fonte-padrao);
+    max-width: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.514);
+}
+.menu{
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.288);
+    background-color: var(--cor3);
+}
+ul li{
+    display: inline;
+    color: var(--cor1);
+}
+body{
+    
+    background-color:#E8E5C2;
+}
+article{
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    width: 85%;
+    margin: auto;
+    min-width: 320px;
+    max-width: 1000px;
+
+}
+article>h1{
+    font-weight: normal;
+    font-size: 1.8em;
+    font-family: var(--fonte-android);
+    color:var(--cor0);
+    margin-left: 2%;
+    padding-top: 10px;
+}
+article>p{
+    color:var(--cor2);
+    font-family: var(--fonte-destaque);
+    text-indent: 25px;
+    margin:15px 10px 15px 10px;
+    font-size: 1em;
+    text-align: justify;
+    line-height: 2em;
+}
+ul li a{
+    color: var(--cor1);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+article>h2{
+    font-weight: normal;
+    font-family: var(--fonte-android);
+    color: var(--cor0);
+    margin-left: 2%;
+    font-size: 1.3em;
+    color: var(--cor2);
+    background-image: linear-gradient(to right, var(--cor0), transparent);
+    text-indent: 8px;
+}
+a.externo::after{
+    content: '\00A0\1F517';
+
+}
+article>p>a{
+    background-color: #268851;
+    color: var(--cor2);
+    text-decoration: none;
+    padding: 2px 6px;
+}
+article>p>a:hover{
+text-decoration: underline;
+color: #024921;
+}
+article strong{
+    color: var(--cor2);
+    font-weight: bold;
+    background-color: #84E1AD;
+    padding: 2px 6px;
+    
+}
+ul li a:hover{
+border: 1px solid;
+background-color: #84E1AD;
+box-shadow:0 3px 10px 0 #84E1AD;
+-webkit-box-pack: 0 3px 10px 0 #84E1AD;
+color: var(--cor0);
+border-radius: 5px;
+transition-duration: 0.3s;
+
+}
+img{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+}
+span{
+    color:var(--cor0);
+}
+#bugdroid{
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.video{
+    background-color: #268851;
+    margin: 0px 0px 30px 0px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+
+}
+.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+aside>header{
+background-color: var(--cor0);
+border-radius: 5px 5px 0px 0px;
+padding: 10px;
+}
+aside{
+    width: 92%;
+    background-color: #C5EBD6;
+    margin-left: 4%;
+    margin-right: 4%;
+    border-radius: 5px;
+    margin-top: 2%;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.397);
+}
+aside>p{
+    margin:1%;
+    text-indent: 15px;
+}
+header>h3{
+    color: var(--cor1);
+}
+footer{
+    background-color:var(--cor0);
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+footer>p{
+    color: var(--cor1);
+    
+}
+footer a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+aside a{
+    padding: 2px 6px;
+    background-color:#268851;
+    color: black;
+    text-decoration: none;
+}
+aside a:hover{
+    text-decoration: underline;
+}
+aside>ul{
+    list-style-type: '\2714\00A0\00A0';
+    columns: 2;
+}
+aside li{
+    display: list-item;
+    color: black;
+}
+aside>h3{
+    color: white;
+    background-color: #268851;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+@media (max-width:720px) {
+.menu ul li a{
+    margin: auto;
+}
+}    
+
